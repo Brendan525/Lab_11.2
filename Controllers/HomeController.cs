@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Text.RegularExpressions;
+using Lab_11._2.Models;
 
 namespace Lab_11._2.Controllers
 {
@@ -14,6 +15,7 @@ namespace Lab_11._2.Controllers
             return View(); // Renders Page
         }
 
+        [HttpGet]
         public ActionResult Registration()
         {
             ViewBag.Message = "Please fill the form to register!"; // Display Message
@@ -31,10 +33,26 @@ namespace Lab_11._2.Controllers
             return View();
         }
 
-        public ActionResult ThankYou(string firstname, string lastname, string state)
+        [HttpPost]
+        public ActionResult ThankYou(string firstname, string lastname, string gender, DateTime birthday, string state, string email, string phone, string password, string starter)
         {
-            ViewBag.Welcome = $"Welcome, {firstname} {lastname} from {state}. Thank you for registering";
-            return View();
+            User user = new User()
+            {
+                FirstName = firstname,
+                LastName = lastname,
+                Gender = gender,
+                Birthday = birthday,
+                State = state,
+                Email = email,
+                PhoneNumber = phone,
+                Password = password,
+                Starter = starter
+            };
+
+            //ViewBag.Welcome = $"Welcome, {firstname} {lastname} from {state}. Thank you for registering";
+            //ViewData["Name"] = firstname + " " + lastname;
+            ViewBag.ThankYou = "Thank you for registering with us.";
+            return View(user);
         }
 
     }
