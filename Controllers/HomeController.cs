@@ -57,8 +57,9 @@ namespace Lab_11._2.Controllers
 
         public ActionResult OrderMenu() 
         {
+           
             return View();
-        } 
+        }
 
     }
 }

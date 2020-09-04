@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "Menu";
     @Styles.Render("~/Content/OrderMenu.css")
+    @Scripts.Render("~/Scripts/Validation.js")
 }
 
 <h2 class="menuTitle">Coffee Menu</h2>
@@ -31,11 +32,18 @@
         <br />
     </select> <br /> <br />
 
-    <input type="radio" name="selection" value="Pick-Up">
+   
+    <input type="radio" id="pick" name="selection" value="Pick-Up" onclick="displayAddressOrPickUpTime()">
     <label for="Pick-Up" class="pickup">Pick-Up</label> <br />
 
-    <input type="radio" name="selection" value="Delivery">
+
+    <input type="radio" id="delivery" name="selection" value="Delivery" onclick="displayAddressOrPickUpTime()">
     <label for="Delivery" class="delivery">Delivery</label> <br /> <br />
+
+    <div id="pickup" style="display:none">
+        <input type="checkbox" id="starter1" name="start" value="Bulbasaur">
+        <label for="bulbasaur" class="bulbasaurTitle"> Bulbasaur</label>
+    </div>
 
     <input type="submit" class="submit" value="Submit">
 
