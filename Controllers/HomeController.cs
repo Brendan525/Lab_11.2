@@ -55,5 +55,10 @@ namespace Lab_11._2.Controllers
             return View(user);
         }
 
+        public ActionResult OrderMenu() 
+        {
+            return View();
+        } 
+
     }
 }

@@ -135,6 +135,8 @@
     <Content Include="Content\Images\001Bulbasaur.png" />
     <Content Include="Content\Images\004Charmander.png" />
     <Content Include="Content\Images\007Squirtle.png" />
+    <Content Include="Content\Images\RedRGBwalkdown.png" />
+    <Content Include="Content\OrderMenu.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -167,6 +169,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\ThankYou.cshtml" />
+    <Content Include="Views\Home\OrderMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
