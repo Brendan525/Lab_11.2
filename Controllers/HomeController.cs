@@ -15,7 +15,7 @@ namespace Lab_11._2.Controllers
             return View(); // Renders Page
         }
 
-        [HttpGet]
+        //[HttpGet]
         public ActionResult Registration()
         {
             ViewBag.Message = "Please fill the form to register!"; // Display Message
@@ -33,7 +33,7 @@ namespace Lab_11._2.Controllers
             return View();
         }
 
-        [HttpPost]
+        //[HttpPost]
         public ActionResult ThankYou(string firstname, string lastname, string gender, DateTime birthday, string state, string email, string phone, string password, string starter)
         {
             User user = new User()
@@ -55,11 +55,48 @@ namespace Lab_11._2.Controllers
             return View(user);
         }
 
+
+        [HttpGet]
         public ActionResult OrderMenu() 
-        {
-           
+        {       
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Order(string firstname, string lastname, string streetAddress1, string streetAddress2, string city, string state, string zipCode, string country)
+        {
+            WebOrder webOrder1 = new WebOrder()
+            {
+                FirstName = firstname,
+                LastName = lastname,
+                StreetAddress1 = streetAddress1,
+                StreetAddress2 = streetAddress2,
+                City = city,
+                State = state,
+                ZipCode = zipCode,
+                Country = country
+            };
+            return View();
+        }
+
+        
+        public ActionResult Test(string firstname, string lastname, string streetAddress1, string streetAddress2, string city, string state, string zipCode, string country)
+        {
+            WebOrder webOrder1 = new WebOrder()
+            {
+                FirstName = firstname,
+                LastName = lastname,
+                StreetAddress1 = streetAddress1,
+                StreetAddress2 = streetAddress2,
+                City = city,
+                State = state,
+                ZipCode = zipCode,
+                Country = country
+            };
+            return View(webOrder1);
+           
+        }
+
 
     }
 }
