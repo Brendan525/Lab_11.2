@@ -137,6 +137,7 @@
     <Content Include="Content\Images\004Charmander.png" />
     <Content Include="Content\Images\007Squirtle.png" />
     <Content Include="Content\Images\RedRGBwalkdown.png" />
+    <Content Include="Content\OrderConfirmation.css" />
     <Content Include="Content\OrderMenu.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -172,7 +173,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\ThankYou.cshtml" />
     <Content Include="Views\Home\OrderMenu.cshtml" />
-    <Content Include="Views\Home\Order.cshtml" />
+    <Content Include="Views\Home\OrderConfirmation.cshtml" />
     <Content Include="Views\Home\Test.cshtml" />
   </ItemGroup>
   <ItemGroup>

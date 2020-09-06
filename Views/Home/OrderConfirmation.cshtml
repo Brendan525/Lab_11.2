@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Order";
+    @Styles.Render("~/Content/OrderConfirmation.css")
+}
+
+<h2>GC Order # 0000000001</h2>
+<br />
+
+<h4>@ViewBag.ThankYou</h4>
+
+
+Name: @Model.FirstName @Model.LastName
+<br />
+
+Drink: @Model.Drink
+<br />
+
+Size: @Model.Size
+<br />
+
+Delivery or Pick-Up: @Model.Selection @Model.Time
+<br />
+
+@Model.StreetAddress1 @Model.StreetAddress2
+<br />
+
+@Model.City @Model.State @Model.ZipCode
+<br />
+
+@Model.Country
+<br />
+
+
+
+
+
+

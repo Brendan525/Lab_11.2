@@ -6,28 +6,17 @@ using System.Web;
 
 namespace Lab_11._2.Models
 {
-    public enum Drink
-    {
-        Cappuccino,
-        Espresso,
-        IcedCoffee,
-        Latte,
-        ColdBrewCoffee,
-        FrappéCoffee,
-        CafféMocha,
-        Carajillo
-    }
-
-    public enum Size
-    {
-        Short,
-        Tall,
-        Grande,
-        Venti
-    }
 
     public class WebOrder
     {
+        public string Drink  { get; set; }
+
+        public string Size { get; set; }
+
+        public string Selection { get; set; }
+
+        public string Time { get; set; }
+
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
@@ -43,5 +32,13 @@ namespace Lab_11._2.Models
         public string ZipCode { get; set; }
 
         public string Country { get; set; }
+
+        public bool Empty
+        {
+            get
+            {
+                return (string.IsNullOrEmpty(FirstName));
+            }
+        }
     }
 }
