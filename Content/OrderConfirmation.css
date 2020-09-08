@@ -1,8 +1,50 @@
 ﻿body {
     text-align: center;
+    background-color: orange;
+}
+
+.orderNumber:hover {
+    color: red;
+}
+
+.order:hover {
+    color: blue;
+}
+
+.nameField:hover {
+    color: darkgreen;
+}
+
+.drink:hover {
+    color: purple;
+}
+
+.size:hover {
+    color: saddlebrown;
+}
+
+.selection:hover {
+    color: white;
+}
+
+.address:hover {
+    color: navy;
+}
+
+.city:hover {
+    color: gray;
+}
+
+.county:hover {
+    color: yellow;
+}
+
+hr {
+   
+    color: blue;
 }
 
 footer {
-    text-align: left;
+    text-align: center;
 }
 

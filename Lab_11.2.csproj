@@ -136,7 +136,11 @@
     <Content Include="Content\Images\001Bulbasaur.png" />
     <Content Include="Content\Images\004Charmander.png" />
     <Content Include="Content\Images\007Squirtle.png" />
+    <Content Include="Content\Images\FirstNational-20140625-0021.jpg" />
+    <Content Include="Content\Images\mocha-1.jpg" />
     <Content Include="Content\Images\RedRGBwalkdown.png" />
+    <Content Include="Content\Images\shutterstock_518188240-800x600.jpg" />
+    <Content Include="Content\index.css" />
     <Content Include="Content\OrderConfirmation.css" />
     <Content Include="Content\OrderMenu.css" />
     <Content Include="favicon.ico" />

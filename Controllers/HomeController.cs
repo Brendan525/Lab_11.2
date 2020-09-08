@@ -81,7 +81,7 @@ namespace Lab_11._2.Controllers
                 ZipCode = zipCode,
                 Country = country
             };
-            ViewBag.ThankYou = "Thank you for your order below is your order";
+            ViewBag.ThankYou = "Thank you for your order. Below is your order";
             return View(webOrder1);
         }
 

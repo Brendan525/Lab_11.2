@@ -1,35 +1,59 @@
 ﻿
 @{
     ViewBag.Title = "Order";
-    @Styles.Render("~/Content/OrderConfirmation.css")
+    @Styles.Render("~/Content/OrderMenu.css")
 }
 
-<h2>GC Order # 0000000001</h2>
 <br />
 
-<h4>@ViewBag.ThankYou</h4>
+<img src="~/Content/Images/mocha-1.jpg" height="80" class="coffee1"/>
 
-
-Name: @Model.FirstName @Model.LastName
+<div class="orderNumber">
+    <h2>GC Order # 0000000001</h2>
+</div>
 <br />
 
-Drink: @Model.Drink
+<div class="order">
+    <h4>@ViewBag.ThankYou</h4>
+</div>
 <br />
 
-Size: @Model.Size
+<div class="nameField">
+    Name: @Model.FirstName @Model.LastName
+</div>
 <br />
 
-Delivery or Pick-Up: @Model.Selection @Model.Time
+<div class="drink">
+    Drink: @Model.Drink
+</div>
 <br />
 
-@Model.StreetAddress1 @Model.StreetAddress2
+<div class="size">
+    Size: @Model.Size
+</div>
 <br />
 
-@Model.City @Model.State @Model.ZipCode
+<div class="selection">
+    Delivery or Pick-Up: @Model.Selection @Model.Time
+</div>
 <br />
 
-@Model.Country
+<div class="address">
+    @Model.StreetAddress1 @Model.StreetAddress2
+</div>
 <br />
+
+<div class="city">
+    @Model.City @Model.State @Model.ZipCode
+</div>
+<br />
+
+<div class="county">
+    @Model.Country
+</div>
+<br />
+
+<img src="~/Content/Images/shutterstock_518188240-800x600.jpg" height="80" class="coffee2"/>
 
 
 
