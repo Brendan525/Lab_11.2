@@ -55,7 +55,6 @@ namespace Lab_11._2.Controllers
             return View(user);
         }
 
-
         [HttpGet]
         public ActionResult OrderMenu() 
         {       
